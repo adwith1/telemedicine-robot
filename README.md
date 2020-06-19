@@ -1,2 +1,2 @@
 # telemedicine-robot
-Build autonomous robots to deliver medication and supplies to patients in the ICU 
+This project was designed to build an autonomous robots capable of deliveriving medication and supplies to patients in the ICU of a hospital. The framework the robot is developed on is ROS (Robot Operating System) and the functionaly is implemeneted in Python. The autonomous vehicle is designed to drive to a specified location when instructed, wait for a set time until the supplies have been removed from the crate, and then drive back to the main location to retrive more supplies. 
