@@ -1,2 +1,2 @@
 # telemedicine-robot
-Build autonomous robots to delivery medicines and supplies to the patients in ICU 
+Build autonomous robots to deliver medication and supplies to patients in the ICU 
