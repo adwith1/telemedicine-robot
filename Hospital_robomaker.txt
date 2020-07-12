@@ -1,3 +1,7 @@
+This is a step by step procedure to simulate the hospital world on robomaker
+please keep in mind that because of AWS EDUCATE restriction I was not able to make it work,
+but is works on my private account. 
+
 Step 1: Create an cloud 9 environment
 
 step 2: create the folder structure 
