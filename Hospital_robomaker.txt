@@ -1,0 +1,51 @@
+Step 1: Create an cloud 9 environment
+
+step 2: create the folder structure 
+
+	environment --> Telemedicine-Robot--> simulation_ws --> src 
+	
+step 3: navigate to src folder using the terminal 
+
+step 4: terminal command: 
+
+	git clone https://github.com/aws-robotics/aws-robomaker-hospital-world.git
+
+step 5: navigate to simulation_ws folder using the terminal
+
+step 6: terminal command: 
+
+	rosdep install --from-paths . --ignore-src -r -y
+	
+step 7: terminal command: 
+
+	colcon build
+	
+step 8: terminal command:
+
+	source install/setup.sh
+	
+step 9: terminal command:
+
+	roslaunch aws_robomaker_hospital_world view_hospital.launch
+	
+NOTE: This is to run the simulation to make sure the application is working before we bundle.
+
+step 10: terminal command: 
+
+	colcon bundle
+	
+step 11: Create a s3 bucket
+
+step 12: terminal command: 
+
+	aws s3 cp "./bundle/output.tar" s3://<name of your s3 bucket>
+	
+step 13: Create a simulation application. 
+
+step 14: point to the output.tar file in the s3 bucket from earlier
+
+step 15: create a simulation job without a robot application. 
+
+NOTE: If there is an error relating to permissions you can create a new IAM role when creating the simulation job. 
+
+done ! 
